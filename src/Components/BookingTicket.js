@@ -12,12 +12,11 @@ import { useNavigate } from "react-router-dom";
 const BookingTicket = () => {
   const navigate = useNavigate();
   const toast = useToast();
-  const [total, setTotal] = useState();
-  const [convenFee, SetconvenFee] = useState();
+  const [ setTotal] = useState();
+  const [ SetconvenFee] = useState();
   const [subtotal, Setsubtotal] = useState();
   const [tdate, setDate] = useState();
-  const [pop, setPop] = useState(false)
-  const { user, selectedMovie, cinemas, setCinemas, location, seats, setSeats, row, setRow, setMovietime, movieTime } = DataState();
+  const { user, selectedMovie, cinemas, setCinemas, location, seats, setSeats, row, setMovietime, movieTime } = DataState();
 
   console.log(user);
 
